@@ -1,0 +1,29 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@vidoso-fe-task/components": ["src/components/src/index.ts"],
+      "@vidoso-fe-task/constants": ["src/constants/src/index.ts"],
+      "@vidoso-fe-task/hooks": ["src/hooks/src/index.ts"],
+      "@vidoso-fe-task/pages": ["src/pages/src/index.ts"],
+      "@vidoso-fe-task/routes": ["src/routes/src/index.ts"],
+      "@vidoso-fe-task/services": ["src/services/src/index.ts"],
+      "@vidoso-fe-task/types": ["src/types/src/index.ts"],
+      "@vidoso-fe-task/ui": ["src/ui/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

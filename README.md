@@ -6,6 +6,10 @@
 
 [Coding Challenge Front-End Developer \_ Vidoso.pdf](task/Coding%20Challenge%20Front-End%20Developer%20_%20Vidoso.pdf)
 
+## Demo
+
+[https://vidoso-fe-task.vercel.app](https://vidoso-fe-task.vercel.app)
+
 ## Installation
 
 - Clone the repository

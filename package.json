@@ -31,7 +31,7 @@
     "@babel/preset-react": "^7.14.5",
     "@nx/cypress": "19.7.1",
     "@nx/devkit": "19.7.1",
-    "@nx/eslint": "19.7.1",
+    "@nx/eslint": "19.7.2",
     "@nx/eslint-plugin": "19.7.1",
     "@nx/js": "19.7.1",
     "@nx/playwright": "19.7.1",

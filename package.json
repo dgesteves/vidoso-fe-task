@@ -32,7 +32,7 @@
     "@nx/cypress": "19.7.1",
     "@nx/devkit": "19.7.1",
     "@nx/eslint": "19.7.1",
-    "@nx/eslint-plugin": "19.7.1",
+    "@nx/eslint-plugin": "19.7.2",
     "@nx/js": "19.7.1",
     "@nx/playwright": "19.7.1",
     "@nx/react": "19.7.1",

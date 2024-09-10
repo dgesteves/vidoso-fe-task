@@ -19,7 +19,7 @@ jobs:
           fetch-depth: 0
 
       # This enables task distribution via Nx Cloud
-      - run: npx nx-cloud start-ci-run --distribute-on="3 linux-medium-js" --stop-agents-after="e2e-ci"
+      #- run: npx nx-cloud start-ci-run --distribute-on="3 linux-medium-js" --stop-agents-after="e2e-ci"
 
       # Cache node_modules
       - uses: actions/setup-node@v4
@@ -29,6 +29,9 @@ jobs:
 
       - run: npm ci --legacy-peer-deps
       - uses: nrwl/nx-set-shas@v4
+
+      # Install Playwright Browsers
+      - run: npx playwright install --with-deps
 
       # Run affected tasks by the changes in this PR/commit
       - run: npx nx affected -t lint test build e2e-ci

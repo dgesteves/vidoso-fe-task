@@ -2,7 +2,7 @@ import { renderHook, act } from '@testing-library/react';
 import { usePaginatedSearch } from './usePaginatedSearch';
 import { useOutletContext } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
-import { INITIAL_PAGE } from '@vidoso-fe-task/constants';
+import { INITIAL_PAGE, STALE_TIME } from '@vidoso-fe-task/constants';
 import { vi, Mock } from 'vitest';
 
 vi.mock('react-router-dom', () => ({
@@ -52,6 +52,7 @@ describe('usePaginatedSearch', () => {
       queryFn: expect.any(Function),
       placeholderData: expect.any(Function),
       retry: false,
+      staleTime: STALE_TIME,
     });
   });
 

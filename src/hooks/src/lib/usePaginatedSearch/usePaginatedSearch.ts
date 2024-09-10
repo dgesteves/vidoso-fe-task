@@ -6,7 +6,11 @@ import {
   PaginatedSearchResults,
   PAGINATION_OUTLET_CONTEXT,
 } from '@vidoso-fe-task/types';
-import { ELEMENTS_PER_PAGE, INITIAL_PAGE } from '@vidoso-fe-task/constants';
+import {
+  ELEMENTS_PER_PAGE,
+  INITIAL_PAGE,
+  STALE_TIME,
+} from '@vidoso-fe-task/constants';
 
 export function usePaginatedSearch() {
   const [currentPage, setCurrentPage] = useState(INITIAL_PAGE);
@@ -25,6 +29,7 @@ export function usePaginatedSearch() {
       }),
     placeholderData: keepPreviousData,
     retry: false,
+    staleTime: STALE_TIME,
   });
 
   useEffect(() => {

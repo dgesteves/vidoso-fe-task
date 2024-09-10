@@ -34,4 +34,5 @@ jobs:
       - run: npx playwright install --with-deps
 
       # Run affected tasks by the changes in this PR/commit
-      - run: npx nx affected -t lint test build e2e-ci
+      # To use NX task distribution agents use e2e-ci
+      - run: npx nx affected -t lint test build e2e
